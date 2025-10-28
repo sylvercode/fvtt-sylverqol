@@ -1,11 +1,11 @@
 {
-  "name": "todo-module-id",
+  "name": "sylver-qol",
   "version": "1.0.0",
-  "description": "todo-module-description",
+  "description": "QoL for FoundryVTT",
   "private": true,
   "scripts": {
-    "build": "tsc && vite build",
-    "watch": "tsc && vite build --watch"
+    "build": "vite build --mode development",
+    "watch": "vite build --watch --mode development"
   },
   "devDependencies": {
     "fvtt-types": "github:League-of-Foundry-Developers/foundry-vtt-types#main",

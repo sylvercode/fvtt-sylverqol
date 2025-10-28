@@ -1,7 +1,7 @@
 {
-  "id": "todo-module-id",
-  "title": "todo-module-title",
-  "description": "todo-module-description",
+  "id": "sylver-qol",
+  "title": "Sylver QoL",
+  "description": "QoL for FoundryVTT",
   "version": "0.0.1",
   "packs": [],
   "system": [],
@@ -13,8 +13,8 @@
   },
   "authors": [
     {
-      "name": "todo-module-author-name",
-      "email": "todo-module-author-email",
+      "name": "Sylvercode",
+      "email": "sylver.dev@outlook.com",
       "flags": {}
     }
   ],
@@ -35,3 +35,4 @@
     "scripts/module.js"
   ]
 }
+

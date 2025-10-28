@@ -2,7 +2,7 @@
 // code and not include them in the build output.
 import "../styles/module.scss";
 import { MODULE_ID } from "./constants";
-import { TodoMyModule as Module, TodoMyModuleHooks as ModuleHooks } from "./types";
+import { SylverQolModule as Module, SylverQolModuleHooks as ModuleHooks } from "./types";
 import { HooksAttacher } from "fvtt-hook-attacher";
 
 let module: Module;
@@ -17,3 +17,4 @@ Hooks.once("init", () => {
 });
 
 HooksAttacher.attachHooks(ModuleHooks.HOOKS_DEFINITIONS_SET);
+
