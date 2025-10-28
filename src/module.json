@@ -1,0 +1,49 @@
+{
+  "id": "todo-module-id",
+  "title": "todo-module-title",
+  "description": "todo-module-description",
+  "version": "0.0.1",
+  "packs": [],
+  "system": [],
+  "dependencies": [],
+  "scripts": [],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "todo-module-author-name",
+      "email": "todo-module-author-email",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.0.0.0",
+          "verified": "1.12.6.0"
+        }
+      }
+    ]
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "esmodules": [
+    "scripts/module.js"
+  ]
+}
