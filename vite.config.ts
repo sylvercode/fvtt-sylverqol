@@ -9,7 +9,7 @@ const githubTag = process.env.GH_TAG;
 
 console.log(process.env.VSCODE_INJECTION);
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "fvtt-hook-attacher": path.resolve(process.cwd(), "libs/fvtt-hook-attacher/index.ts"),
@@ -17,6 +17,7 @@ export default defineConfig({
   },
   build: {
     sourcemap: true,
+    minify: mode === "development" ? false : undefined,
     rollupOptions: {
       input: "src/ts/module.ts",
       output: {
@@ -43,7 +44,7 @@ export default defineConfig({
       hook: "writeBundle",
     }),
   ],
-});
+}));
 
 function updateModuleManifestPlugin(): Plugin {
   return {
